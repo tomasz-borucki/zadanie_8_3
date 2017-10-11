@@ -1,0 +1,498 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+
+@import url('https://fonts.googleapis.com/css?family=Hind:700')
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+  
+$headerColor: #313234 
+$liHoverColor: #838383
+$homeColor: #00c7e8
+$whiteColor: #fff
+$buttonColor: #807f7d
+
+body
+  font-family: 'Open Sans', sans-serif
+
+*
+  box-sizing: border-box
+
+.container
+  margin: 0 auto
+  width: 100%
+  max-width: 1200px
+
+.row
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+header
+  height: 50px
+  background: $headerColor
+
+.home a
+  color: $homeColor
+
+nav
+  ul
+    list-style-type: none
+    float: right
+    li
+      display: inline-block
+      width: 100px
+      transition-duration: 300ms
+      text-align: center
+      &:hover
+        background: $liHoverColor
+      a
+        text-decoration: none
+        text-transform: uppercase
+        color: $whiteColor
+        line-height: 50px
+        padding: 0 10px
+  img
+    padding: 10px 0
+
+.hero
+  background-image: url(https://images.unsplash.com/1/macbook-air-all-faded-and-stuff.jpg)
+  height: 400px
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+
+.slogan
+  width: 500px
+  float: right
+  background: rgba(56, 56, 56, 0.7)
+  position: absolute
+  top: 50%
+  right: 0
+  transform: translateY(-50%)
+  h1
+    color: $whiteColor
+    text-transform: uppercase
+    padding: 20px
+    font-size: 40px
+    font-weight: 300
+    line-height: 40px
+    span
+      font-weight: 700
+
+.buttons
+  width: 175px
+  margin: 0 auto
+  padding-top: 340px
+  button
+    width: 25px
+    height: 25px
+    border-radius: 50px
+    margin: 15px
+    border: 0
+    background: $buttonColor
+    transition-duration: 300ms
+    &:hover
+      background: $whiteColor
+      cursor: pointer
+
+.col-1
+  width: 8.33%
+
+.col-2
+  width: 16.66%
+
+.col-3
+  width: 25%
+
+.col-4
+  width: 33.33%
+
+.col-5
+  width: 41.66%
+
+.col-6
+  width: 50%
+
+.col-7
+  width: 58.33%
+
+.col-8
+  width: 66.66%
+
+.col-9
+  width: 75%
+
+.col-10
+  width: 83.33%
+
+.col-11
+  width: 91.66%
+
+.col-12
+  width: 100%
+
+.col-offset-0
+  margin-left: 0
+
+.col-offset-1
+  margin-left: 8.33%
+
+.col-offset-2
+  margin-left: 16.66%
+
+.col-offset-3
+  margin-left: 25%
+
+.col-offset-4
+  margin-left: 33.33%
+
+.col-offset-5
+  margin-left: 41.66%
+
+.col-offset-6
+  margin-left: 50%
+
+.col-offset-7
+  margin-left: 58.33%
+
+.col-offset-8
+  margin-left: 66.66%
+
+.col-offset-9
+  margin-left: 75%
+
+.col-offset-10
+  margin-left: 83.33%
+
+.col-offset-11
+  margin-left: 91.66%
+
+[class^=col-]
+  min-height: 1px
+  text-align: center
+  float: left
+
+.benefits .container .row .col-4
+  text-align: center
+  font-size: 90px
+  padding: 40px
+
+.fa
+  color: $headerColor
+  transition-duration: 300ms
+
+.benefits .col-4:hover .fa
+  color: $homeColor
+
+span
+  transition-duration: 300ms
+
+.benefits
+  .col-4:hover span
+    color: $homeColor
+  .container .row .col-4
+    p
+      font-size: 15px
+      font-weight: 300
+    span
+      text-transform: uppercase
+      font-size: 25px
+      text-align: center
+      font-weight: 700
+      margin-top: 0px
+      margin-bottom: 0px
+
+.works
+  text-align: center
+  margin-top: 80px
+  h1
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 50px
+
+.gallery
+  margin-top: 40px
+
+.galleryItem
+  width: 100%
+  height: 200px
+  display: block
+  position: relative
+  margin: 0 auto
+  .image, .layer
+    width: inherit
+    height: inherit
+    position: absolute
+  .image
+    background-position: center
+    background-size: cover
+
+.img1, .img6
+  background: url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img2, .img5
+  background: url('https://images.pexels.com/photos/398532/pexels-photo-398532.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img3
+  background: url('https://images.pexels.com/photos/51397/legs-window-car-dirt-road-51397.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img4
+  background: url('https://images.pexels.com/photos/325520/pexels-photo-325520.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img7, .img12
+  background: url('https://images.pexels.com/photos/51397/legs-window-car-dirt-road-51397.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img8
+  background: url('https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img9
+  background: url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img10
+  background: url('https://images.pexels.com/photos/398532/pexels-photo-398532.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.img11
+  background: url('https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.galleryItem
+  .layer
+    z-index: 2
+    transform: scaleY(1)
+    .iconBox
+      text-align: center
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      i
+        height: 40px
+        width: 40px
+        display: inline-block
+        color: $whiteColor
+        margin: 0 10px
+        line-height: 40px
+        transform: scaleY(0)
+    &:hover i
+      transform: scaleY(1)
+  &:hover .layer
+    background: rgba(0, 0, 0, 0.4)
+
+.people
+  margin-top: 100px
+
+.galleryItem-rounded
+  width: 180px
+  height: 180px
+  margin: 0 auto
+  .image
+    overflow: hidden
+    border-radius: 50%
+    width: inherit
+    height: inherit
+    position: absolute
+  .layer
+    overflow: hidden
+    border-radius: 50%
+    width: inherit
+    height: inherit
+    position: absolute
+    transform: scaleY(1)
+    z-index: 2
+    .textbox
+      text-align: center
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      p
+        height: 40px
+        display: inline-block
+        color: $whiteColor
+        margin: 0 10px
+        line-height: 40px
+        transform: scaleY(0)
+  .image
+    background-position: center
+    background-size: cover
+
+.pic-0
+  background: url('https://images.pexels.com/photos/428339/pexels-photo-428339.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.pic-1
+  background: url('https://images.pexels.com/photos/301284/pexels-photo-301284.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.pic-2
+  background: url('https://images.pexels.com/photos/262391/pexels-photo-262391.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.pic-3
+  background: url('https://images.pexels.com/photos/418870/pexels-photo-418870.jpeg?h=350&auto=compress&cs=tinysrgb')
+
+.galleryItem-rounded
+  .layer:hover p
+    transform: scaleY(1)
+  &:hover .layer
+    background: rgba(0, 0, 0, 0.4)
+
+.phone
+  margin-top: 100px
+  text-transform: uppercase
+  color: rgba(0, 0, 0, 0.5)
+  margin-top: 130px 15px
+  h1
+    font-size: 45px
+    margin-top: 70px
+    font-weight: 700
+  img
+    width: 100%
+    height: auto
+    margin: 0
+    padding-top: 20px
+
+.numbers
+  margin-top: 90px
+  .col-3
+    text-transform: uppercase
+  h1
+    font-family: 'Hind', sans-serif
+    font-size: 55px
+    font-weight: 700
+  p
+    color: $homeColor
+    font-weight: 700
+
+.footer
+  margin-top: 100px
+  background: $headerColor
+  .col-4
+    color: $whiteColor
+    padding: 30px 45px 20px 45px
+    text-align: left
+  h1
+    font-family: 'Hind', sans-serif
+    text-transform: uppercase
+    font-size: 25px
+    font-weight: 700
+    padding: 15px 0
+    span
+      background: $headerColor
+      padding: 0 10px 0 0
+      text-align: left
+
+  p
+    color: rgba(255, 255, 255, 0.7)
+  i
+    font-size: 40px
+    color: $homeColor
+  .row
+    padding-bottom: 10px
+  .middle .strong
+    font-weight: 700
+  
+
+
+h1 + *
+  border-top: solid 2px $whiteColor
+  padding-top: 45px
+  margin-top: -40px
+
+.col-5, .col-7
+  text-align: left
+
+.icons i
+  margin-right: 5px
+  font-size: 40px
+  transition-duration: 300ms
+  &:hover
+    cursor: pointer
+    color: $whiteColor
+
+.copyright
+  text-transform: uppercase
+  color: $whiteColor
+  background: #292929
+  text-align: center
+  padding: 15px
+
+@media (max-width: 769px)
+  .col-s-1
+    width: 8.33%
+  .col-s-2
+    width: 16.66%
+  .col-s-3
+    width: 25%
+  .col-s-4
+    width: 33.33%
+  .col-s-5
+    width: 41.66%
+  .col-s-6
+    width: 50%
+  .col-s-7
+    width: 58.33%
+  .col-s-8
+    width: 66.66%
+  .col-s-9
+    width: 75%
+  .col-s-10
+    width: 83.33%
+  .col-s-11
+    width: 91.66%
+  .col-s-12
+    width: 100%
+
+@media (min-width: 770px) and (max-width: 1200px)
+  nav
+    padding-right: 30px
+    ul li
+      widh: 70px
+
+@media (max-width: 769px)
+  body
+    text-align: center
+  header
+    height: auto
+  .slogan
+    display: none
+  nav
+    text-align: center
+    ul
+      float: none
+      text-align: center
+      li
+        display: block
+        margin: 0 auto
+        font-weight: 700
+  .works
+    padding: 0 20px
+  .gallery
+    padding: 20px
+  .galleryItem
+    width: 100%
+    height: 400px
+    position: relative
+    .layer
+      transform: scaleY(0)
+  .people
+    .col-2
+      margin: 0px
+    .col-offset-2
+      margin-left: 0
+  .galleryItem-rounded .layer
+    transform: scaleY(0)
+  .footer
+    .col-4, p
+      text-align: center
+    .col-s-12 .row
+      padding: 14px
+
+  h1 + *
+    border-top: none
+  .numbers .col-3
+    padding: 20px
